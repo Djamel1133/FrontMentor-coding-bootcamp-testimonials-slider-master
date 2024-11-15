@@ -1,0 +1,32 @@
+/* import variables */
+@import 'variables' ;
+
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: $fs-small;
+  font-weight: $fs-small;
+  text-align: center;
+  line-height: 1.250;
+
+  background-image: url('../images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-size: auto 6rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+ a { color: hsl(228, 45%, 44%); }
+}

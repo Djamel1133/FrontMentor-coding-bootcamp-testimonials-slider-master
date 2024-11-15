@@ -1,0 +1,109 @@
+/* import variables */
+/* ==========================
+   Root Variables for Colors, Font Sizes, and Weights
+========================== */
+/* Primary colors */
+/* font weight */
+/* font size */
+/*16px */
+/*20px*/
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 1rem;
+  text-align: center;
+  line-height: 1.25;
+  background-image: url("../images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-size: auto 6rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+body .main-container {
+  padding: 1rem;
+  color: hsl(240, 18%, 77%);
+}
+body .main-container .header {
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 24.2rem 21rem;
+  background-position: center;
+  height: 21rem;
+  padding: 1.75rem 1.75rem 0rem 1.75rem;
+}
+body .main-container .header .person-photo {
+  position: relative;
+  width: 20rem;
+  height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 6px;
+}
+body .main-container .header .navigation {
+  top: 18.5rem;
+  left: calc(50vw - 2.5rem);
+  width: 5rem;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 0.65rem;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #5c614f;
+}
+body .main-container .header .navigation img { /* prev and next arrows */
+  height: 0.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0.55rem;
+}
+body .main-container .description {
+  color: hsl(240, 38%, 20%);
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 4rem 20%;
+  background-position-x: center;
+  order: 1;
+  width: 95%;
+  z-index: 99;
+}
+body .main-container .description p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 1.5rem 0;
+  text-align: center;
+  line-height: 1.275;
+  opacity: 0.9;
+}
+body .main-container .description .author {
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+body .main-container .description .author h1, body .main-container .description .author h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+body .main-container .description .author h2 {
+  font-weight: 500;
+  opacity: 0.4;
+}/*# sourceMappingURL=small-style.css.map */

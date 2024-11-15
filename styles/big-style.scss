@@ -1,0 +1,89 @@
+/* import variables */
+@import 'base' ;
+
+body {
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    color: $Grayish-Blue;
+    width: 100%;
+
+   .header {
+    background-image: url(../images/pattern-bg.svg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background-position-y: -20px; */
+    order: 2;
+    height: 97.5vh; /* not 100vh to give some space to the footer */
+    position: relative; 
+    margin-right: 3rem;
+    
+   .person-photo {
+     /*width: 32.5rem;*/
+     width: 95%;
+     height: 80%;
+     object-fit: cover; 
+     border-radius: 6px; 
+     margin: 3.2rem 5rem 3rem 0;
+    }
+
+    .navigation {
+      top: 85%;
+      left: 8%;
+      width: 6rem;
+      position: absolute;
+      z-index: 1;
+      background-color: $White;
+      padding: 0.65rem;
+      border-radius: 25px;
+      box-shadow: 0px 5px 5px #e9e5e5;
+      img{  /* prev and next arrows */
+      height: 1em;
+      object-fit: cover;
+      margin: 0 0.75rem;
+    }
+    }
+  }
+
+.description {
+    color: $Dark-Blue;
+    text-wrap: pretty;
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: auto 30% ; 
+    background-position-x: center; 
+    order: 1;
+    width: 32.5%;
+    z-index: 99;
+    margin-left: 8rem;
+    p{
+      width: 135%;
+      overflow-x: visible;
+      font-size: $fs-large;
+      font-weight: $fw-small;
+      padding: 2rem 0 ;
+      text-align: left;
+      line-height: 1.275;
+      opacity: 0.8;
+    }
+   .author{
+    width: 100%;
+    text-align: left;
+    margin: 1.5rem 0 ;
+    h1, h2 {
+      font-size: $fs-medium;
+      font-weight: $fw-large;
+      display: inline;
+   }
+  h2{
+    font-size: $fs-small; 
+    font-weight: $fw-medium ;
+    opacity: 0.4;
+  }
+ }
+}
+}
+}
+ 

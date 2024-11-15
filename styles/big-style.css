@@ -1,0 +1,121 @@
+/* import variables */
+/* import variables */
+/* ==========================
+   Root Variables for Colors, Font Sizes, and Weights
+========================== */
+/* Primary colors */
+/* font weight */
+/* font size */
+/*16px */
+/*20px*/
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 1rem;
+  text-align: center;
+  line-height: 1.25;
+  background-image: url("../images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-size: auto 6rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+body .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: hsl(240, 18%, 77%);
+  width: 100%;
+}
+body .main-container .header {
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /*background-position-y: -20px; */
+  order: 2;
+  height: 97.5vh; /* not 100vh to give some space to the footer */
+  position: relative;
+  margin-right: 3rem;
+}
+body .main-container .header .person-photo {
+  /*width: 32.5rem;*/
+  width: 95%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  margin: 3.2rem 5rem 3rem 0;
+}
+body .main-container .header .navigation {
+  top: 85%;
+  left: 8%;
+  width: 6rem;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 0.65rem;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px #e9e5e5;
+}
+body .main-container .header .navigation img { /* prev and next arrows */
+  height: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0.75rem;
+}
+body .main-container .description {
+  color: hsl(240, 38%, 20%);
+  text-wrap: pretty;
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+  background-position-x: center;
+  order: 1;
+  width: 32.5%;
+  z-index: 99;
+  margin-left: 8rem;
+}
+body .main-container .description p {
+  width: 135%;
+  overflow-x: visible;
+  font-size: clamp(1.75rem, 2vw + 0.5rem, 2.125rem);
+  font-weight: 300;
+  padding: 2rem 0;
+  text-align: left;
+  line-height: 1.275;
+  opacity: 0.8;
+}
+body .main-container .description .author {
+  width: 100%;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+body .main-container .description .author h1, body .main-container .description .author h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: inline;
+}
+body .main-container .description .author h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.4;
+}/*# sourceMappingURL=big-style.css.map */

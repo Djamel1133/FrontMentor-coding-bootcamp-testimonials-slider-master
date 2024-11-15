@@ -1,0 +1,17 @@
+/* ==========================
+   Root Variables for Colors, Font Sizes, and Weights
+========================== */
+/* Primary colors */
+$Dark-Blue: hsl(240, 38%, 20%) ;
+$Grayish-Blue: hsl(240, 18%, 77%) ;
+$White: white ;
+
+/* font weight */
+$fw-small: 300;
+$fw-medium: 500;
+$fw-large: 700;
+
+/* font size */
+$fs-small:   1rem ; /*16px */
+$fs-medium:  1.25rem; /*20px*/
+$fs-large:   clamp(1.75rem, 2vw + 0.5rem, 2.125rem);

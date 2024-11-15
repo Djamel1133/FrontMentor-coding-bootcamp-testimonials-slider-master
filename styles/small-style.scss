@@ -1,0 +1,77 @@
+@import 'base' ;
+
+body {
+  .main-container {
+   padding: 1rem;
+   color: $Grayish-Blue;
+   
+   .header {
+    background-image: url(../images/pattern-bg.svg) ;
+    background-repeat: no-repeat;
+    background-size: 24.2rem 21rem;
+    background-position: center;
+
+    height: 21rem;
+    padding: 1.75rem 1.75rem 0rem 1.75rem ;
+        
+   .person-photo {
+     position: relative; 
+     width: 20rem;
+     height: 17rem;
+     object-fit: cover; 
+     aspect-ratio: 1;
+     border-radius: 6px; 
+     }
+
+    .navigation {
+      top: 18.5rem;
+      left: calc(50vw - 2.5rem);
+      width: 5rem;
+      position: absolute;
+      z-index: 1;
+      background-color: $White;
+      padding: 0.65rem;
+      border-radius: 25px;
+      box-shadow: 0px 5px 10px #5c614f;
+      img{  /* prev and next arrows */
+      height: 0.8rem;
+      object-fit: cover;
+      margin: 0 0.55rem;
+    }
+    }
+  }
+
+.description {
+    color: $Dark-Blue;
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 4rem 20% ; 
+    background-position-x: center; 
+    order: 1;
+    width: 95%;
+    z-index: 99;
+    p{
+      font-size: $fs-medium;
+      font-weight: $fw-small;
+      padding: 1.5rem 0 ;
+      text-align: center;
+      line-height: 1.275;
+      opacity: 0.9;
+    }
+   .author{
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0 ;
+    h1, h2 {
+      font-size: $fs-small;
+      font-weight: $fw-large;
+   }
+  h2{
+   font-weight: $fw-medium ;
+    opacity: 0.4;
+  }
+ }
+}
+}
+}
+ 
