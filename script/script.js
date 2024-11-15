@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 const authors = [
 {
   name : "Tanya Sinclair" ,
@@ -13,11 +15,14 @@ const authors = [
  }
 ]
 
-var current_index = 1 ; /* start with john */
+
+let current_index = 0 ; /* ladies First */
 let author_image = document.getElementById('author_image');
 let author_name = document.getElementById('author_name');
 let author_description = document.getElementById('author_description') ;
 let author_job = document.getElementById('author_job') ;
+
+LoadUser() ; // load tanya profile 
 
 function LoadUser() {
  author_name.innerHTML = authors[current_index].name ;
@@ -36,3 +41,4 @@ function handleButtonClick(event) {
     current_index = (current_index + direction + 2) % 2; // switch between 0 1 or 1 0 // 2 is the lenght of authors array
     LoadUser(current_index);
 }
+})
