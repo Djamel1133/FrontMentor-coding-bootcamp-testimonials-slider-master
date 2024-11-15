@@ -29,6 +29,7 @@ function LoadUser() {
  author_description.innerHTML = authors[current_index].description ;
  author_image.src = authors[current_index].image_path ;
  author_function.innerHTML = authors[current_index].job ;
+ // I should add alt too
 }
    
 // Add event listener to buttons with the same class
